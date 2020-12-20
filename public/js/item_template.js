@@ -1,8 +1,8 @@
 //export html template for item view
 
 let item_template = `
- <div class="item list-group-item list-group-item-action" data-index="111">
-    <div class="d-flex w-75 justify-content-between">
+ <div class="item list-group-item list-group-item-action  mb-1" data-index="">
+    <div class="d-flex w-100 justify-content-between">
 	<div>
       <h5 class="mb-1 "><a href="" class="item-name" target="_blank"></a></h5>
       <small class="item-date"></small>
@@ -10,7 +10,7 @@ let item_template = `
     </div>
 	
 	<div class="dropdown">
-		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		  <button class="btn btn-secondary dropdown-toggle mr-5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			Actions
 		  </button>
 		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

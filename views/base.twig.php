@@ -19,7 +19,7 @@
 	
 </head>
 <body>
-	<div class="px-4 pt-md-5 pb-md-4 mx-auto text-center">
+	<div class="px-4 pb-md-4 mx-auto text-center">
 		{% block body %}
 		{% endblock %}	
 	</div>

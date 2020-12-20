@@ -6,7 +6,7 @@ var _items = {
 		let res;
 		
 		await fetch(
-			'\?_action=items',
+			'\items',
 			{
 			method: 'GET',
 			}
@@ -21,7 +21,7 @@ var _items = {
 	add: async function(data) {		//add item
 		let res;
 		
-		await fetch('\?_action=items', {			
+		await fetch('\items', {			
 			method: 'POST', 
 			headers: { 'Content-type': 'application/x-www-form-urlencoded' },
 			body: data
@@ -35,7 +35,7 @@ var _items = {
 	done: async function(id) { //done item
 		
 		await fetch(
-			'\?_action=items/'+id,
+			'\items/'+id,
 			{
 			method: 'PUT',
 			}
@@ -46,7 +46,7 @@ var _items = {
 	delete: async function(id) { //delete item
 		
 		await fetch(
-			'\?_action=items/'+id,
+			'\items/'+id,
 			{
 			method: 'DELETE',
 			}
@@ -65,7 +65,7 @@ var _tasks_table = {
 				
 				let out = $(item_template);
 				out.find('.item-name').text(item.name);
-				out.find('.item-name').prop('href', '\?_action=items/'+item.index);
+				out.find('.item-name').prop('href', '\items/'+item.index);
 				out.find('.item-desc').text(item.task);
 				
 				out.attr('data-index', item.index);

@@ -29,8 +29,10 @@ class Tasks {//class for access to Tasks
 				self::load();
 				$index = self::$last_index+1;
 				self::$tasks[$index] = new Task($name, $task, $index);	
+				
+				self::$last_index++;
 				self::save();
-				self::$last_index++;				
+								
 		}
 		
 		static function get(int $index):Task { //get task by id

@@ -29,11 +29,11 @@ class Task { //class for one task
 				$this->status = 'done';
 		}
 		
-		public function getName() {
+		public function getName(): string {
 				return $this->name;
 		}
 		
-		public function getTask(): Task {
+		public function getTask(): string {
 				return $this->task;
 		}
 		

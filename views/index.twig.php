@@ -1,7 +1,7 @@
 {% extends "base.twig.php" %}
 
 {%block body%}
-<div class="card card-default w-50 mx-auto">
+<div class="card card-default w-50 mx-auto pt-md-3 mb-3">
 	<div class="card-header">Add new task</div>
   <div class="card-body">
 		
